@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "declaration": false,
+    "rootDir": "./src",
+    "sourceRoot": "./src",
+    "outDir": "./dist",
+    "lib": [
+      "es2016"
+    ],
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@style-types"
+    ]
+  },
+  "exclude": [
+    "_builds",
+    "_steps",
+    ".wercker",
+    "dist",
+    "node_modules"
+  ]
+}

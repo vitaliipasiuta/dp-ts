@@ -1,0 +1,23 @@
+{
+  "name": "design_patterns",
+  "version": "0.1.0",
+  "description": "-------------------",
+  "author": "vitaliy.pasiuta",
+  "scripts": {
+    "start": "./scripts/start"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StyleLounge/plp-campaign-analyzer.git"
+  },
+  "keywords": [],
+  "dependencies": {
+    "colors": "^1.1.2",
+    "lodash": "^4.17.4",
+    "prompt": "^1.0.0"
+  }
+}
