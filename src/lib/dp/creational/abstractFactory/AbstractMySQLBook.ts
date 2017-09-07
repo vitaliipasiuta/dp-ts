@@ -1,9 +1,7 @@
-import {AbstractBook} from "./AbstractBook";
+import AbstractBook from "./AbstractBook";
 
 abstract class AbstractMySQLBook extends AbstractBook {
   private subject: string = "MySQL";
 }
 
-export {
-  AbstractMySQLBook
-}
+export default AbstractMySQLBook;

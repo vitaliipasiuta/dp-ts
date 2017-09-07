@@ -5,8 +5,6 @@ class BookBorrower {
   private borrowedBook: any;
   private haveBook: boolean = false;
 
-  constructor() { }
-
   getAuthorAndTitle (): string {
     return this.haveBook ? this.borrowedBook.getAuthorAndTitle() : "I don't have the book";
   }
@@ -16,13 +14,11 @@ class BookBorrower {
     this.haveBook = this.borrowedBook !== null;
   }
 
-  returnBook () {
-    this.borrowedBook.returnBook(this.borrowedBook);
+  returnBook (): void {
+    this.borrowedBook.returnBook();
   }
 
 
 }
 
-export {
-  BookBorrower
-}
+export default BookBorrower;

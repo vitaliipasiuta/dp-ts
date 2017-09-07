@@ -1,6 +1,5 @@
-
-import {OReillyBookFactory} from "./OReillyBookFactory";
-import {SamsBookFactory} from "./SamsBookFactory";
+import OReillyBookFactory from "./OReillyBookFactory";
+import SamsBookFactory from "./SamsBookFactory";
 
 class Example {
 

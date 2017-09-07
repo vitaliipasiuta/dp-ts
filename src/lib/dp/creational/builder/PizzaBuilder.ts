@@ -1,16 +1,14 @@
-import {Pizza} from "./Pizza";
+import Pizza from "./Pizza";
 
 abstract class PizzaBuilder {
 
   protected pizza: Pizza;
 
-  constructor () {}
-
-  getPizza (): Pizza {
+  getPizza(): Pizza {
     return this.pizza;
   }
 
-  createNewPizzaProduct() {
+  createNewPizzaProduct(): void {
     this.pizza = new Pizza;
   }
 
@@ -20,6 +18,4 @@ abstract class PizzaBuilder {
 
 }
 
-export {
-  PizzaBuilder
-}
+export default PizzaBuilder;

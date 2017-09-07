@@ -1,6 +1,6 @@
-import {Visitor} from "./Visitor";
-import {BookVisitee} from "./BookVisitee";
-import {SoftwareVisitee} from "./SoftwareVisitee";
+import Visitor from "./Visitor";
+import BookVisitee from "./BookVisitee";
+import SoftwareVisitee from "./SoftwareVisitee";
 
 class PlainDescriptionVisitor extends Visitor {
 
@@ -25,6 +25,4 @@ class PlainDescriptionVisitor extends Visitor {
 
 }
 
-export {
-  PlainDescriptionVisitor
-}
+export default PlainDescriptionVisitor;

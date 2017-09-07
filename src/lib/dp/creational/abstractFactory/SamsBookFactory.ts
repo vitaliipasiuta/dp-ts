@@ -1,6 +1,6 @@
-import {AbstractBookFactory} from "./AbstractBookFactory";
-import {SamsPHPBook} from "./SamsPHPBook";
-import {SamsMySQLBook} from "./SamsMySQLBook";
+import AbstractBookFactory from "./AbstractBookFactory";
+import SamsPHPBook from "./SamsPHPBook";
+import SamsMySQLBook from "./SamsMySQLBook";
 
 class SamsBookFactory extends AbstractBookFactory {
 
@@ -16,6 +16,4 @@ class SamsBookFactory extends AbstractBookFactory {
 
 }
 
-export {
-  SamsBookFactory
-}
+export default SamsBookFactory;

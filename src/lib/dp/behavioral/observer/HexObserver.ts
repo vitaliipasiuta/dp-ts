@@ -1,5 +1,5 @@
-import {Observer} from "./Observer";
-import {Subject} from "./Subject";
+import Observer from "./Observer";
+import Subject from "./Subject";
 
 class HexObserver extends Observer{
 
@@ -10,11 +10,9 @@ class HexObserver extends Observer{
   }
 
   public update(): void {
-    console.log(this.subject.getState().toString(16));
+    console.log(`hex(16) ${this.subject.getState().toString(16)}`);
   }
 
 }
 
-export {
-  HexObserver
-}
+export default HexObserver;

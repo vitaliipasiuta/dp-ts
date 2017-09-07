@@ -1,4 +1,4 @@
-import {Subject} from "./Subject";
+import Subject from "./Subject";
 
 abstract class Observer {
 
@@ -7,6 +7,4 @@ abstract class Observer {
 
 }
 
-export {
-  Observer
-}
+export default Observer;

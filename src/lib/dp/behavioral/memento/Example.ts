@@ -1,10 +1,7 @@
-
-import {Caretaker} from "./Caretaker";
-import {Originator} from "./Originator";
+import Caretaker from "./Caretaker";
+import Originator from "./Originator";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST MEMENTO PATTER \n");

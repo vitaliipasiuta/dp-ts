@@ -1,4 +1,4 @@
-import {BridgeBook} from "./BridgeBook";
+import BridgeBook from "./BridgeBook";
 
 class BridgeBookTitleAuthor extends BridgeBook {
 
@@ -8,6 +8,4 @@ class BridgeBookTitleAuthor extends BridgeBook {
 
 }
 
-export {
-  BridgeBookTitleAuthor
-}
+export default BridgeBookTitleAuthor;

@@ -1,10 +1,7 @@
-
-import {Book} from "./Book";
-import {StrategyContext} from "./StrategyContext";
+import Book from "./Book";
+import StrategyContext from "./StrategyContext";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST STRATEGY PATTER \n");

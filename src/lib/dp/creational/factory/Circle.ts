@@ -1,8 +1,6 @@
-import {IShape} from "./IShape";
+import IShape from "./IShape";
 
 class Circle implements IShape {
-
-  constructor () {}
 
   draw (): void {
     console.log("Inside Circle:draw() method");
@@ -10,6 +8,4 @@ class Circle implements IShape {
 
 }
 
-export {
-  Circle
-}
+export default Circle;

@@ -1,4 +1,4 @@
-import {AbstractEntity} from "./AbstractEntity";
+import AbstractEntity from "./AbstractEntity";
 
 class RealEntity extends AbstractEntity {
 
@@ -8,6 +8,4 @@ class RealEntity extends AbstractEntity {
 
 }
 
-export {
-  RealEntity
-}
+export default RealEntity;

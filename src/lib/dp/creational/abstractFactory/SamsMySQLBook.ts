@@ -1,4 +1,4 @@
-import {AbstractMySQLBook} from "./AbstractMySQLBook";
+import AbstractMySQLBook from "./AbstractMySQLBook";
 
 class SamsMySQLBook extends AbstractMySQLBook {
 
@@ -25,6 +25,4 @@ class SamsMySQLBook extends AbstractMySQLBook {
 
 }
 
-export {
-  SamsMySQLBook
-}
+export default SamsMySQLBook;

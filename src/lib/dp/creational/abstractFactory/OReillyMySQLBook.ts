@@ -1,4 +1,4 @@
-import {AbstractMySQLBook} from "./AbstractMySQLBook";
+import AbstractMySQLBook from "./AbstractMySQLBook";
 
 class OReillyMySQLBook extends AbstractMySQLBook {
 
@@ -25,6 +25,4 @@ class OReillyMySQLBook extends AbstractMySQLBook {
 
 }
 
-export {
-  OReillyMySQLBook
-}
+export default OReillyMySQLBook;

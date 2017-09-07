@@ -3,6 +3,4 @@ abstract class AbstractBook {
   public abstract getTitle();
 }
 
-export {
-  AbstractBook
-}
+export default AbstractBook;

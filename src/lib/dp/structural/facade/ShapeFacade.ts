@@ -1,7 +1,7 @@
-import {Circle} from "./Circle";
-import {Square} from "./Square";
-import {Rectangle} from "./Rectangle";
-import {IShape} from "./IShape";
+import Circle from "./Circle";
+import Square from "./Square";
+import Rectangle from "./Rectangle";
+import IShape from "./IShape";
 
 class ShapeFacade {
 
@@ -29,6 +29,4 @@ class ShapeFacade {
 
 }
 
-export {
-  ShapeFacade
-}
+export default ShapeFacade;

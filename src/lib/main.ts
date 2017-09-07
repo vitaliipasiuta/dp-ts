@@ -1,8 +1,6 @@
-import * as prompt from "prompt";
-import {PatternsUtil} from "./util/PatternsUtil";
+import {start} from "prompt";
+import {PatternsUtils} from "./utils/PatternsUtils";
 
-console.log('Choose pattern example number:');
+PatternsUtils.print();
 
-PatternsUtil.print();
-
-prompt.start().get("pattern", (err, result): void => PatternsUtil.start(result.pattern));
+start().get("pattern", (e, r): void => PatternsUtils.start(r.pattern));

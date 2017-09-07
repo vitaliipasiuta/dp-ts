@@ -1,4 +1,4 @@
-import {AbstractEntity} from "./AbstractEntity";
+import AbstractEntity from "./AbstractEntity";
 
 class NullEntity extends AbstractEntity {
 
@@ -8,6 +8,4 @@ class NullEntity extends AbstractEntity {
 
 }
 
-export {
-  NullEntity
-}
+export default NullEntity;

@@ -1,12 +1,9 @@
 class ReusableObject {
 
   public doSmth(): void {
-    // tslint:disable-next-line:no-console
-    console.log('do smth, faker');
+    console.log('do smth, fucker');
   }
 
 }
 
-export {
-  ReusableObject
-}
+export default ReusableObject;

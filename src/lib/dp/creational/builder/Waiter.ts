@@ -1,5 +1,5 @@
-import {PizzaBuilder} from "./PizzaBuilder"
-import {Pizza} from "./Pizza";
+import PizzaBuilder from "./PizzaBuilder"
+import Pizza from "./Pizza";
 
 class Waiter {
 
@@ -22,6 +22,4 @@ class Waiter {
 
 }
 
-export {
-  Waiter
-}
+export default Waiter;

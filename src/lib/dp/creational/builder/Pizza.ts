@@ -1,7 +1,5 @@
 class Pizza {
 
-  constructor () {}
-
   private dough: string = "";
   private sauce: string = "";
   private topping: string = "";
@@ -20,6 +18,4 @@ class Pizza {
 
 }
 
-export {
-  Pizza
-}
+export default Pizza;

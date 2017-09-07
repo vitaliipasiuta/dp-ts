@@ -1,9 +1,6 @@
-
-import {Circle} from "./Circle";
+import Circle from "./Circle";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST PRIVATE CLASS DATA PATTER \n");

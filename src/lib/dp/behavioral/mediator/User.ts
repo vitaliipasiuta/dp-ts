@@ -1,4 +1,4 @@
-import {ChatRoomMediator} from "./ChatRoomMediator";
+import ChatRoomMediator from "./ChatRoomMediator";
 
 class User {
 
@@ -21,6 +21,4 @@ class User {
   }
 }
 
-export {
-  User
-}
+export default User;

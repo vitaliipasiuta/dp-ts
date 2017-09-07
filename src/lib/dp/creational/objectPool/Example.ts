@@ -1,13 +1,10 @@
-
-import {ObjectPool} from "./ObjectPool";
-import {ReusableObject} from "./ReusableObject";
+import ObjectPool from "./ObjectPool";
+import ReusableObject from "./ReusableObject";
 
 class Example {
 
-  constructor() { }
-
   static start(): void {
-    console.log("START TEST OBJECT POOL PATTER \n");
+    console.log("\nSTART TEST OBJECT POOL PATTER \n");
 
     const pool = new ObjectPool();
     let reusableObject = new ReusableObject();
@@ -16,7 +13,7 @@ class Example {
     reusableObject = pool.get('reusable_object_key');
     reusableObject.doSmth();
 
-    console.log("END TEST OBJECT POOL PATTER \n");
+    console.log("\nEND TEST OBJECT POOL PATTER \n");
   }
 
 }

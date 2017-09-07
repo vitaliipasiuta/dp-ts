@@ -1,7 +1,7 @@
-import {Observer} from "./Observer";
-import {Subject} from "./Subject";
+import Observer from "./Observer";
+import Subject from "./Subject";
 
-class BinObserver extends Observer{
+class BinObserver extends Observer {
 
   constructor (subject: Subject) {
     super();
@@ -10,11 +10,9 @@ class BinObserver extends Observer{
   }
 
   public update(): void {
-    console.log(this.subject.getState().toString(2));
+    console.log(`bin(2) ${this.subject.getState().toString(2)}`);
   }
 
 }
 
-export {
-  BinObserver
-}
+export default BinObserver;

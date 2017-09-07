@@ -1,7 +1,7 @@
-import {IStrategy} from "./IStrategy";
-import {Book} from "./Book";
+import IStrategy from "./IStrategy";
+import Book from "./Book";
 
-class StrategyExclaim implements IStrategy{
+class StrategyExclaim implements IStrategy {
 
   public showTitle(book: Book): string {
     const title = book.getTitle();
@@ -10,6 +10,4 @@ class StrategyExclaim implements IStrategy{
 
 }
 
-export {
-  StrategyExclaim
-}
+export default StrategyExclaim;

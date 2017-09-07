@@ -1,13 +1,32 @@
-import {Row} from "./Row";
-import {Column} from "./Column";
-import {Composite} from "./Composite";
-import {Primitive} from "./Primitive";
+import Row from "./columns/Row";
+import Column from "./columns/Column";
+import Composite from "./columns/Composite";
+import Primitive from "./columns/Primitive";
+import Directory from "./files/Directory";
+import File from "./files/File";
 
 class Example {
 
-  constructor() { }
-
   static start(): void {
+    const music: Directory = new Directory("MUSIC");
+    const scorpions: Directory = new Directory("SCORPIONS");
+    const dio: Directory = new Directory("DIO");
+    const track1: File = new File("Don't wary, be happy.mp3");
+    const track2: File = new File("track2.m3u");
+    const track3: File = new File("Wind of change.mp3");
+    const track4: File = new File("Big city night.mp3");
+    const track5: File = new File("Rainbow in the dark.mp3");
+    music.add(track1);
+    music.add(scorpions);
+    music.add(track2);
+    scorpions.add(track3);
+    scorpions.add(track4);
+    scorpions.add(dio);
+    dio.add(track5);
+    music.ls(0);
+  }
+
+  static startColumn(): void {
     console.log("\nSTART TEST COMPOSITE PATTER \n");
 
     const first: Composite = new Row(1);
@@ -28,6 +47,7 @@ class Example {
 
     first.traverse();
 
+    console.log("");
     console.log("\nEND TEST COMPOSITE PATTER \n");
   }
 

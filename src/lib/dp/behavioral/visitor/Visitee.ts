@@ -1,4 +1,4 @@
-import {Visitor} from "./Visitor";
+import Visitor from "./Visitor";
 
 abstract class Visitee {
 
@@ -6,6 +6,4 @@ abstract class Visitee {
 
 }
 
-export {
-  Visitee
-}
+export default Visitee;

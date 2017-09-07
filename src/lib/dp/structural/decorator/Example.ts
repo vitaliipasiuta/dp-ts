@@ -1,12 +1,9 @@
-
-import {Book} from "./Book";
-import {BookTitleDecorator} from "./BookTitleDecorator";
-import {BookTitleStarDecorator} from "./BookTitleStarDecorator";
-import {BookTitleExclaimDecorator} from "./BookTitleExclaimDecorator";
+import Book from "./Book";
+import BookTitleDecorator from "./BookTitleDecorator";
+import BookTitleStarDecorator from "./BookTitleStarDecorator";
+import BookTitleExclaimDecorator from "./BookTitleExclaimDecorator";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST DECORATOR PATTER \n");

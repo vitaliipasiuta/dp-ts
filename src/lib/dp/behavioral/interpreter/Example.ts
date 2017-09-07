@@ -1,14 +1,12 @@
-import {TerminalExpression} from "./TerminalExpression";
-import {OrExpression} from "./OrExpression";
-import {AndExpression} from "./AndExpression";
-import {IExpression} from "./IExpression";
+import TerminalExpression from "./TerminalExpression";
+import OrExpression from "./OrExpression";
+import AndExpression from "./AndExpression";
+import IExpression from "./IExpression";
 
 class Example {
 
-  constructor() { }
-
   static start(): void {
-    console.log("START TEST INTERPRETER PATTER \n");
+    console.log("\nSTART TEST INTERPRETER PATTER \n");
 
     const isMale: IExpression = Example.getMaleExpression();
     const isMarriedWoman: IExpression = Example.getMarriedWomanExpression();
@@ -16,19 +14,19 @@ class Example {
     console.log("John is male? " + isMale.interpret("John"));
     console.log("Julie is a married women? " + isMarriedWoman.interpret("Married Julie"));
 
-    console.log("END TEST INTERPRETER PATTER \n");
-  }
-
-  public static getMarriedWomanExpression(): IExpression {
-    const julia = new TerminalExpression("Julia");
-    const merried = new TerminalExpression("Merried");
-    return new AndExpression(julia, merried);
+    console.log("\nEND TEST INTERPRETER PATTER \n");
   }
 
   public static getMaleExpression(): IExpression {
-    const robert = new TerminalExpression("Robert");
-    const john = new TerminalExpression("John");
+    const robert: TerminalExpression = new TerminalExpression("Robert");
+    const john: TerminalExpression = new TerminalExpression("John");
     return new OrExpression(robert, john);
+  }
+
+  public static getMarriedWomanExpression(): IExpression {
+    const julie: TerminalExpression = new TerminalExpression("Julie");
+    const married: TerminalExpression = new TerminalExpression("Married");
+    return new AndExpression(julie, married);
   }
 
 }

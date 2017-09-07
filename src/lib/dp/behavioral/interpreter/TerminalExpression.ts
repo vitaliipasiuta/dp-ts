@@ -1,4 +1,4 @@
-import {IExpression} from "./IExpression";
+import IExpression from "./IExpression";
 
 class TerminalExpression implements IExpression {
 
@@ -14,6 +14,4 @@ class TerminalExpression implements IExpression {
 
 }
 
-export {
-  TerminalExpression
-}
+export default TerminalExpression;

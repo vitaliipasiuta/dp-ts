@@ -1,4 +1,4 @@
-import {Book} from "./Book";
+import Book from "./Book";
 
 class BookTitleDecorator {
 
@@ -20,6 +20,4 @@ class BookTitleDecorator {
 
 }
 
-export {
-  BookTitleDecorator
-}
+export default BookTitleDecorator;

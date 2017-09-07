@@ -1,11 +1,19 @@
-import {Book} from "./Book";
-import {BookContext} from "./BookContext";
+import Book from "./book/Book";
+import BookContext from "./book/BookContext";
+import Button from "./button/Button";
 
 class Example {
 
-  constructor() { }
-
   static start(): void {
+    const btn: Button = new Button();
+
+    btn.push();
+    btn.push();
+    btn.push();
+    btn.push();
+  }
+
+  static startBook(): void {
     console.log("\nSTART TEST STATE PATTER \n");
 
     const book = new Book('PHP for Cats','Larry Truett');

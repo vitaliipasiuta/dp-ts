@@ -1,6 +1,6 @@
-import {BookListIterator} from "./BookListIterator";
-import {BookList} from "./BookList";
-import {Book} from "./Book";
+import BookListIterator from "./BookListIterator";
+import BookList from "./BookList";
+import Book from "./Book";
 
 class BookListReverseIterator extends BookListIterator {
 
@@ -23,6 +23,4 @@ class BookListReverseIterator extends BookListIterator {
 
 }
 
-export {
-  BookListReverseIterator
-}
+export default BookListReverseIterator;

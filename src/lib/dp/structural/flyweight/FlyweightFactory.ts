@@ -1,10 +1,8 @@
-import {FlyweightBook} from "./FlyweightBook";
+import FlyweightBook from "./FlyweightBook";
 
 class FlyweightFactory {
 
   private books: FlyweightBook[] = [null, null, null, null];
-
-  constructor () {}
 
   public getBook (bookKey: number): FlyweightBook {
 
@@ -28,6 +26,4 @@ class FlyweightFactory {
   }
 }
 
-export {
-  FlyweightFactory
-}
+export default FlyweightFactory;

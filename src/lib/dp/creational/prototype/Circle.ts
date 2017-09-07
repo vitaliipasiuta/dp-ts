@@ -1,4 +1,4 @@
-import {Shape} from "./Shape";
+import Shape from "./Shape";
 
 class Circle extends Shape{
 
@@ -13,6 +13,4 @@ class Circle extends Shape{
 
 }
 
-export {
-  Circle
-}
+export default Circle;

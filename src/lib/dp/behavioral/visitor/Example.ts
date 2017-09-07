@@ -1,13 +1,11 @@
-import {BookVisitee} from "./BookVisitee";
-import {SoftwareVisitee} from "./SoftwareVisitee";
-import {PlainDescriptionVisitor} from "./PlainDescriptionVisitor";
-import {FancyDescriptionVisitor} from "./FancyDescriptionVisitor";
-import {Visitee} from "./Visitee";
-import {Visitor} from "./Visitor";
+import BookVisitee from "./BookVisitee";
+import SoftwareVisitee from "./SoftwareVisitee";
+import PlainDescriptionVisitor from "./PlainDescriptionVisitor";
+import FancyDescriptionVisitor from "./FancyDescriptionVisitor";
+import Visitee from "./Visitee";
+import Visitor from "./Visitor";
 
 class Example {
-
-  constructor() { }
 
   static acceptVisitor(visitee: Visitee, visitor: Visitor): void {
     visitee.accept(visitor);

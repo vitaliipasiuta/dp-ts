@@ -1,4 +1,4 @@
-import {BridgeBookImp} from "./BridgeBookImp";
+import BridgeBookImp from "./BridgeBookImp";
 
 class BridgeBookStarsImp extends BridgeBookImp {
 
@@ -12,6 +12,4 @@ class BridgeBookStarsImp extends BridgeBookImp {
 
 }
 
-export {
-  BridgeBookStarsImp
-}
+export default BridgeBookStarsImp;

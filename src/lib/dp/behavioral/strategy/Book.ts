@@ -1,5 +1,3 @@
-
-
 class Book {
 
   private author: string;
@@ -24,6 +22,4 @@ class Book {
 
 }
 
-export {
-  Book
-}
+export default Book;

@@ -1,12 +1,10 @@
-import {Waiter} from "./Waiter";
-import {HawaiinPizzaBuilder} from "./HawaiinPizzaBuilder";
-import {SpicyPizzaBuilder} from "./SpicyPizzaBuilder";
-import {PizzaBuilder} from "./PizzaBuilder";
-import {Pizza} from "./Pizza";
+import Waiter from "./Waiter";
+import HawaiinPizzaBuilder from "./HawaiinPizzaBuilder";
+import SpicyPizzaBuilder from "./SpicyPizzaBuilder";
+import PizzaBuilder from "./PizzaBuilder";
+import Pizza from "./Pizza";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST BUILDER PATTER \n");
@@ -20,7 +18,6 @@ class Example {
 
     const pizza1: Pizza = waiter.getPizza();
 
-    // tslint:disable-next-line:no-console
     console.log(pizza1);
 
     waiter.setPizzaBuilder(spicePizzaBuilder);
@@ -28,7 +25,6 @@ class Example {
 
     const pizza2: Pizza = waiter.getPizza();
 
-    // tslint:disable-next-line:no-console
     console.log(pizza2);
 
     console.log("\nEND TEST BUILDER PATTER \n");

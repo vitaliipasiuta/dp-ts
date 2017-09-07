@@ -1,4 +1,4 @@
-import {IExpression} from "./IExpression";
+import IExpression from "./IExpression";
 
 class OrExpression implements IExpression {
 
@@ -16,6 +16,4 @@ class OrExpression implements IExpression {
 
 }
 
-export {
-  OrExpression
-}
+export default OrExpression;

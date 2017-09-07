@@ -1,5 +1,5 @@
-import {Visitee} from "./Visitee";
-import {Visitor} from "./Visitor";
+import Visitee from "./Visitee";
+import Visitor from "./Visitor";
 
 class BookVisitee extends Visitee {
 
@@ -26,6 +26,4 @@ class BookVisitee extends Visitee {
 
 }
 
-export {
-  BookVisitee
-}
+export default BookVisitee;

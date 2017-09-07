@@ -1,4 +1,4 @@
-import {IExpression} from "./IExpression";
+import IExpression from "./IExpression";
 
 class AndExpression implements IExpression {
 
@@ -16,6 +16,4 @@ class AndExpression implements IExpression {
 
 }
 
-export {
-  AndExpression
-}
+export default AndExpression;

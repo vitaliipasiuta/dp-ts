@@ -1,9 +1,7 @@
-import {Book} from "./Book";
+import Book from "./Book";
 
 interface IStrategy {
   showTitle(book: Book): string
 }
 
-export {
-  IStrategy
-}
+export default IStrategy;

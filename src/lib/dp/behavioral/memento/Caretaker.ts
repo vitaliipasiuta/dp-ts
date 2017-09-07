@@ -1,12 +1,8 @@
-
-
-import {Memento} from "./Memento";
+import Memento from "./Memento";
 
 class Caretaker {
 
   private momentos: Memento[] = [];
-
-  constructor () {}
 
   public addMemento(m: Memento): void {
     this.momentos.push(m);
@@ -18,6 +14,4 @@ class Caretaker {
 
 }
 
-export {
-  Caretaker
-}
+export default Caretaker;

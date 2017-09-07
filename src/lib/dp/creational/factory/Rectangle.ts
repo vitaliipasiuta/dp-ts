@@ -1,8 +1,6 @@
-import {IShape} from "./IShape";
+import IShape from "./IShape";
 
 class Rectangle implements IShape {
-
-  constructor () {}
 
   draw (): void {
     console.log("Inside Rectangle:draw() method");
@@ -10,6 +8,4 @@ class Rectangle implements IShape {
 
 }
 
-export {
-  Rectangle
-}
+export default Rectangle;

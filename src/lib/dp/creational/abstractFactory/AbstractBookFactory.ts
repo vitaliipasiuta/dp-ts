@@ -3,6 +3,4 @@ abstract class AbstractBookFactory {
   public abstract makeMySQLBook();
 }
 
-export {
-  AbstractBookFactory
-}
+export default AbstractBookFactory;

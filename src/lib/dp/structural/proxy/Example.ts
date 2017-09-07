@@ -1,11 +1,7 @@
-
-
-import {ProxyBookList} from "./ProxyBookList";
-import {Book} from "./Book";
+import ProxyBookList from "./ProxyBookList";
+import Book from "./Book";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST PROXY PATTER \n");

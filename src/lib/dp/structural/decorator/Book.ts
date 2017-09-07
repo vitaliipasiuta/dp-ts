@@ -22,6 +22,4 @@ class Book {
 
 }
 
-export {
-  Book
-}
+export default Book;

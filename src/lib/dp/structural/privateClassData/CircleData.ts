@@ -26,6 +26,4 @@ class CircleData {
 
 }
 
-export {
-  CircleData
-}
+export default CircleData;

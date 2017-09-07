@@ -1,4 +1,4 @@
-import {AbstractPHPBook} from "./AbstractPHPBook";
+import AbstractPHPBook from "./AbstractPHPBook";
 
 class OReillyPHPBook extends AbstractPHPBook {
 
@@ -33,6 +33,4 @@ class OReillyPHPBook extends AbstractPHPBook {
 
 }
 
-export {
-  OReillyPHPBook
-}
+export default OReillyPHPBook;

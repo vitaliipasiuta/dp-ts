@@ -1,4 +1,4 @@
-import {Shape} from "./Shape";
+import Shape from "./Shape";
 
 class Square extends Shape{
 
@@ -13,6 +13,4 @@ class Square extends Shape{
 
 }
 
-export {
-  Square
-}
+export default Square;

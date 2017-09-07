@@ -1,7 +1,7 @@
-import {StrategyCaps} from "./StrategyCaps";
-import {StrategyExclaim} from "./StrategyExclaim";
-import {StrategyStar} from "./StrategyStar";
-import {Book} from "./Book";
+import StrategyCaps from "./StrategyCaps";
+import StrategyExclaim from "./StrategyExclaim";
+import StrategyStar from "./StrategyStar";
+import Book from "./Book";
 
 class StrategyContext {
 
@@ -26,6 +26,4 @@ class StrategyContext {
   }
 }
 
-export {
-  StrategyContext
-}
+export default StrategyContext;

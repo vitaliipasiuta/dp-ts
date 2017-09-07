@@ -1,12 +1,10 @@
-import {Book} from "./Book";
+import Book from "./Book";
 import {isNumber} from "util";
 
 class BookList {
 
   private books: Book[] = [];
   private bookCount: number = -1;
-
-  constructor () {}
 
   public getBookCount(): number {
     return this.bookCount;
@@ -45,6 +43,4 @@ class BookList {
 
 }
 
-export {
-  BookList
-}
+export default BookList;

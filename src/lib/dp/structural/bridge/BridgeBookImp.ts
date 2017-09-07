@@ -1,9 +1,6 @@
-
 abstract class BridgeBookImp {
   abstract showAuthor (author: string);
   abstract showTitle (title: string);
 }
 
-export {
-  BridgeBookImp
-}
+export default BridgeBookImp;

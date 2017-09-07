@@ -1,10 +1,7 @@
-
-import {ShapeCache} from "./ShapeCache";
-import {Shape} from "./Shape";
+import ShapeCache from "./ShapeCache";
+import Shape from "./Shape";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST PROTOTYPE PATTER \n");

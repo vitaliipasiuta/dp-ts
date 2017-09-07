@@ -1,4 +1,4 @@
-import {CircleData} from "./CircleData";
+import CircleData from "./CircleData";
 
 class Circle {
 
@@ -18,6 +18,4 @@ class Circle {
 
 }
 
-export {
-  Circle
-}
+export default Circle;

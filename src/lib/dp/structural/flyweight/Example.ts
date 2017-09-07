@@ -1,10 +1,7 @@
-
-import {FlyweightFactory} from "./FlyweightFactory";
-import {FlyweightBookShelf} from "./FlyweightBookShelf";
+import FlyweightFactory from "./FlyweightFactory";
+import FlyweightBookShelf from "./FlyweightBookShelf";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST FLYWEIGHT PATTER \n");

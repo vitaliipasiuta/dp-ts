@@ -12,6 +12,4 @@ class ObjectPool {
 
 }
 
-export {
-  ObjectPool
-}
+export default ObjectPool;

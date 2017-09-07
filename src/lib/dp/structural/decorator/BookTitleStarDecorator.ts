@@ -1,7 +1,7 @@
-import {BookTitleDecorator} from "./BookTitleDecorator";
-import {Book} from "./Book";
+import BookTitleDecorator from "./BookTitleDecorator";
+import Book from "./Book";
 
-class BookTitleStarDecorator extends BookTitleDecorator{
+class BookTitleStarDecorator extends BookTitleDecorator {
 
   private btd: BookTitleDecorator;
 
@@ -16,6 +16,4 @@ class BookTitleStarDecorator extends BookTitleDecorator{
 
 }
 
-export {
-  BookTitleStarDecorator
-}
+export default BookTitleStarDecorator;

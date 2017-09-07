@@ -2,6 +2,4 @@ interface IShape {
   draw(): void;
 }
 
-export {
-  IShape
-}
+export default IShape;

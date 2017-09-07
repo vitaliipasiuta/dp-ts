@@ -1,11 +1,9 @@
-import {IShape} from "./IShape";
-import {Circle} from "./Circle";
-import {Rectangle} from "./Rectangle";
-import {Square} from "./Square";
+import IShape from "./IShape";
+import Circle from "./Circle";
+import Rectangle from "./Rectangle";
+import Square from "./Square";
 
 class ShapeFactory {
-
-  constructor () {}
 
   getShape (shapeType: string): IShape {
     if (!shapeType) return null;
@@ -17,6 +15,4 @@ class ShapeFactory {
 
 }
 
-export {
-  ShapeFactory
-}
+export default ShapeFactory;

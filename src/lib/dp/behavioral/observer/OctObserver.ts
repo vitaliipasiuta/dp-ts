@@ -1,5 +1,5 @@
-import {Observer} from "./Observer";
-import {Subject} from "./Subject";
+import Observer from "./Observer";
+import Subject from "./Subject";
 
 class OctObserver extends Observer{
 
@@ -10,11 +10,9 @@ class OctObserver extends Observer{
   }
 
   public update(): void {
-    console.log(this.subject.getState().toString(8));
+    console.log(`oct(8) ${this.subject.getState().toString(8)}`);
   }
 
 }
 
-export {
-  OctObserver
-}
+export default OctObserver;

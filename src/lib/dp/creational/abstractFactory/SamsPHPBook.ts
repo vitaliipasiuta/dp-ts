@@ -1,4 +1,4 @@
-import {AbstractPHPBook} from "./AbstractPHPBook";
+import AbstractPHPBook from "./AbstractPHPBook";
 
 class SamsPHPBook extends AbstractPHPBook {
 
@@ -7,8 +7,7 @@ class SamsPHPBook extends AbstractPHPBook {
 
   constructor() {
     super();
-    const r: boolean = Math.random() >= 0.5;
-    if (r) {
+    if (Math.random() >= 0.5) { // random true or false : boolean
       this.title = "George Schlossnagle";
       this.author = "Advanced PHP Programming";
     } else {
@@ -31,6 +30,4 @@ class SamsPHPBook extends AbstractPHPBook {
 
 }
 
-export {
-  SamsPHPBook
-}
+export default SamsPHPBook;

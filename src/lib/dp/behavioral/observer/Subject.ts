@@ -1,11 +1,9 @@
-import {Observer} from "./Observer";
+import Observer from "./Observer";
 
 class Subject {
 
   private observers: Observer[] = [];
   private state: number;
-
-  constructor() {}
 
   public add(o: Observer): void {
     this.observers.push(o);
@@ -28,6 +26,4 @@ class Subject {
 
 }
 
-export {
-  Subject
-}
+export default Subject;

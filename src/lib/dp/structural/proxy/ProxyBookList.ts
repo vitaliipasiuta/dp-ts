@@ -1,5 +1,5 @@
-import {BookList} from "./BookList";
-import {Book} from "./Book";
+import BookList from "./BookList";
+import Book from "./Book";
 
 class ProxyBookList {
 
@@ -46,6 +46,4 @@ class ProxyBookList {
 
 }
 
-export {
-  ProxyBookList
-}
+export default ProxyBookList;

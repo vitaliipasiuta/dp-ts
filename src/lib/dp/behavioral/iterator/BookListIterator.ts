@@ -1,10 +1,10 @@
-import {BookList} from "./BookList";
-import {Book} from "./Book";
+import BookList from "./BookList";
+import Book from "./Book";
 
 class BookListIterator {
 
-  protected  bookList: BookList;
-  protected  currentBook: number = -1;
+  protected bookList: BookList;
+  protected currentBook: number = -1;
 
   constructor (bookList: BookList) {
     this.bookList = bookList;
@@ -30,6 +30,4 @@ class BookListIterator {
 
 }
 
-export {
-  BookListIterator
-}
+export default BookListIterator;

@@ -1,4 +1,4 @@
-import {Shape} from "./Shape";
+import Shape from "./Shape";
 
 class Rectangle extends Shape{
 
@@ -13,6 +13,4 @@ class Rectangle extends Shape{
 
 }
 
-export {
-  Rectangle
-}
+export default Rectangle;

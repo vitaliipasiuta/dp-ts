@@ -1,16 +1,12 @@
-
 class BookSingleton {
 
   private author: string = "Chack Palanik";
   private title: string = "Fight Club";
-  private pattern: string = "creational/singleton";
 
   private static book: BookSingleton = null;
   private static isLoanedOut: boolean = false;
 
-  constructor() { }
-
-  static borrowBook () {
+  static borrowBook (): BookSingleton {
     if (this.isLoanedOut === false) {
       if (this.book === null) {
         this.book = new BookSingleton();
@@ -22,12 +18,8 @@ class BookSingleton {
     }
   }
 
-  returnBook (book: BookSingleton) {
+  returnBook (): void {
     BookSingleton.isLoanedOut = false;
-  }
-
-  getPattern (): string {
-    return this.pattern;
   }
 
   getTitle (): string {

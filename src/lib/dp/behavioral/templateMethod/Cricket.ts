@@ -1,4 +1,4 @@
-import {Game} from "./Game";
+import Game from "./Game";
 
 class Cricket extends Game {
 
@@ -15,6 +15,4 @@ class Cricket extends Game {
   }
 }
 
-export {
-  Cricket
-}
+export default Cricket;

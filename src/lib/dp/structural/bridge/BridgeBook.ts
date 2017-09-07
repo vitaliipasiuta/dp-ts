@@ -1,5 +1,5 @@
-import {BridgeBookStarsImp} from "./BridgeBookStarsImp";
-import {BridgeBookCapsImp} from "./BridgeBookCapsImp";
+import BridgeBookStarsImp from "./BridgeBookStarsImp";
+import BridgeBookCapsImp from "./BridgeBookCapsImp";
 
 abstract class BridgeBook {
 
@@ -23,6 +23,4 @@ abstract class BridgeBook {
 
 }
 
-export {
-  BridgeBook
-}
+export default BridgeBook;

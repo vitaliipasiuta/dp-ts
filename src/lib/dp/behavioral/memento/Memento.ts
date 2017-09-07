@@ -1,5 +1,3 @@
-
-
 class Memento {
 
   private state: string;
@@ -14,6 +12,4 @@ class Memento {
 
 }
 
-export {
-  Memento
-}
+export default Memento;

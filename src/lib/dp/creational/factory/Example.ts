@@ -1,11 +1,9 @@
-import {ShapeFactory} from "./ShapeFactory";
+import ShapeFactory from "./ShapeFactory";
 
 class Example {
 
-  constructor() { }
-
   static start(): void {
-    console.log("\nSTART TEST FACTORY PATTER \n");
+    console.log("\nSTART TEST FACTORY PATTER\n");
 
     const shapeFactory = new ShapeFactory();
 
@@ -27,7 +25,7 @@ class Example {
     //call draw method of circle
     shape3.draw();
 
-    console.log("\nEND TEST FACTORY PATTER \n");
+    console.log("\nEND TEST FACTORY PATTER\n");
   }
 
 }

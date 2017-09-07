@@ -1,9 +1,9 @@
-import {Shape} from "./Shape";
-import {Circle} from "./Circle";
-import {Rectangle} from "./Rectangle";
-import {Square} from "./Square";
+import Shape from "./Shape";
+import Circle from "./Circle";
+import Rectangle from "./Rectangle";
+import Square from "./Square";
 
-class ShapeCache{
+class ShapeCache {
 
   private static shapeMap: {} = {};
 
@@ -28,6 +28,4 @@ class ShapeCache{
 
 }
 
-export {
-  ShapeCache
-}
+export default ShapeCache;

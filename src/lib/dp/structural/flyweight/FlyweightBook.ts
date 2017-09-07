@@ -22,6 +22,4 @@ class FlyweightBook {
 
 }
 
-export {
-  FlyweightBook
-}
+export default FlyweightBook;

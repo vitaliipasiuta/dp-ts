@@ -1,6 +1,6 @@
-import {OReillyPHPBook} from "./OReillyPHPBook";
-import {OReillyMySQLBook} from "./OReillyMySQLBook";
-import {AbstractBookFactory} from "./AbstractBookFactory";
+import OReillyPHPBook from "./OReillyPHPBook";
+import OReillyMySQLBook from "./OReillyMySQLBook";
+import AbstractBookFactory from "./AbstractBookFactory";
 
 class OReillyBookFactory extends AbstractBookFactory {
 
@@ -16,6 +16,4 @@ class OReillyBookFactory extends AbstractBookFactory {
 
 }
 
-export {
-  OReillyBookFactory
-}
+export default OReillyBookFactory;

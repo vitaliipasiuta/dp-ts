@@ -1,8 +1,6 @@
-import {ShapeFacade} from "./ShapeFacade";
+import ShapeFacade from "./ShapeFacade";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST FACADE PATTER \n");

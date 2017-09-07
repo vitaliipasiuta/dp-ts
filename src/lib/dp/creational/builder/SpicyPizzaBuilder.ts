@@ -1,4 +1,4 @@
-import {PizzaBuilder} from "./PizzaBuilder"
+import PizzaBuilder from "./PizzaBuilder"
 
 class SpicyPizzaBuilder extends PizzaBuilder {
 
@@ -16,7 +16,6 @@ class SpicyPizzaBuilder extends PizzaBuilder {
 
 }
 
-export {
-  SpicyPizzaBuilder
-}
+export default SpicyPizzaBuilder;
+
 

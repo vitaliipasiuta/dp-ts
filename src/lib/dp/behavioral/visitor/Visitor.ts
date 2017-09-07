@@ -1,11 +1,9 @@
-import {BookVisitee} from "./BookVisitee";
-import {SoftwareVisitee} from "./SoftwareVisitee";
+import BookVisitee from "./BookVisitee";
+import SoftwareVisitee from "./SoftwareVisitee";
 
 abstract class Visitor {
   public abstract visitBook(bookVisitee: BookVisitee);
-  public abstract visitSoftware(softwareVisitee: SoftwareVisitee)
+  public abstract visitSoftware(softwareVisitee: SoftwareVisitee);
 }
 
-export {
-  Visitor
-}
+export default Visitor;

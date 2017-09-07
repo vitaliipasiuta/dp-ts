@@ -1,10 +1,7 @@
-
-import {RealEntity} from "./RealEntity";
-import {NullEntity} from "./NullEntity";
+import RealEntity from "./RealEntity";
+import NullEntity from "./NullEntity";
 
 class Example {
-
-  constructor() { }
 
   static start(): void {
     console.log("\nSTART TEST NULL OBJECT PATTER \n");
