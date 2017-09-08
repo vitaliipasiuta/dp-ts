@@ -2,14 +2,15 @@ import TerminalExpression from "./TerminalExpression";
 import OrExpression from "./OrExpression";
 import AndExpression from "./AndExpression";
 import IExpression from "./IExpression";
+import IExample from "../../../models/IExample";
 
-class Example {
+class InterpreterExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST INTERPRETER PATTER \n");
 
-    const isMale: IExpression = Example.getMaleExpression();
-    const isMarriedWoman: IExpression = Example.getMarriedWomanExpression();
+    const isMale: IExpression = this.getMaleExpression();
+    const isMarriedWoman: IExpression = this.getMarriedWomanExpression();
 
     console.log("John is male? " + isMale.interpret("John"));
     console.log("Julie is a married women? " + isMarriedWoman.interpret("Married Julie"));
@@ -17,13 +18,13 @@ class Example {
     console.log("\nEND TEST INTERPRETER PATTER \n");
   }
 
-  public static getMaleExpression(): IExpression {
+  private getMaleExpression(): IExpression {
     const robert: TerminalExpression = new TerminalExpression("Robert");
     const john: TerminalExpression = new TerminalExpression("John");
     return new OrExpression(robert, john);
   }
 
-  public static getMarriedWomanExpression(): IExpression {
+  private getMarriedWomanExpression(): IExpression {
     const julie: TerminalExpression = new TerminalExpression("Julie");
     const married: TerminalExpression = new TerminalExpression("Married");
     return new AndExpression(julie, married);
@@ -31,6 +32,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default InterpreterExample;

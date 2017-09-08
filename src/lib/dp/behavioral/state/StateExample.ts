@@ -1,19 +1,23 @@
 import Book from "./book/Book";
 import BookContext from "./book/BookContext";
 import Button from "./button/Button";
+import IExample from "../../../models/IExample";
 
-class Example {
+class StateExample implements IExample {
 
-  static start(): void {
+  public start(): void {
+    console.log("\nSTART TEST STATE PATTER \n");
     const btn: Button = new Button();
 
     btn.push();
     btn.push();
     btn.push();
     btn.push();
+
+    console.log("\nEND TEST STATE PATTER \n");
   }
 
-  static startBook(): void {
+  public startBook(): void {
     console.log("\nSTART TEST STATE PATTER \n");
 
     const book = new Book('PHP for Cats','Larry Truett');
@@ -40,6 +44,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default StateExample;

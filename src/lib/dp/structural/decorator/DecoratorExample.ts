@@ -2,10 +2,11 @@ import Book from "./Book";
 import BookTitleDecorator from "./BookTitleDecorator";
 import BookTitleStarDecorator from "./BookTitleStarDecorator";
 import BookTitleExclaimDecorator from "./BookTitleExclaimDecorator";
+import IExample from "../../../models/IExample";
 
-class Example {
+class DecoratorExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST DECORATOR PATTER \n");
 
     const patternBook = new Book('Gamma, Helm, Johnson, and Vlissides', 'Design Patterns');
@@ -38,6 +39,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default DecoratorExample;

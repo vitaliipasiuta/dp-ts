@@ -1,8 +1,9 @@
 import Circle from "./Circle";
+import IExample from "../../../models/IExample";
 
-class Example {
+class PrivateClassDataExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST PRIVATE CLASS DATA PATTER \n");
 
     const circle: Circle = new Circle(10, "blue", 1);
@@ -15,6 +16,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default PrivateClassDataExample;

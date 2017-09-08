@@ -1,5 +1,5 @@
 import {start} from "prompt";
-import {PatternsUtils} from "./utils/PatternsUtils";
+import PatternsUtils from "./utils/PatternsUtils";
 
 PatternsUtils.print();
 

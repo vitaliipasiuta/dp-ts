@@ -1,8 +1,9 @@
 import User from "./User";
+import IExample from "../../../models/IExample";
 
-class Example {
+class MediatorExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST MEDIATOR PATTER \n");
 
     const robert: User = new User("Robert");
@@ -16,6 +17,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default MediatorExample;

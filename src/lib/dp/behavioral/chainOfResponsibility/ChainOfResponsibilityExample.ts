@@ -5,10 +5,11 @@ import LS from "./image/LS";
 import BookTopic from "./book/BookTopic";
 import BookSubTopic from "./book/BookSubTopic";
 import BookSubSubTopic from "./book/BookSubSubTopic";
+import IExample from "../../../models/IExample";
 
-class Example {
+class ChainOfResponsibilityExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST CHAIN OF RESPONSIBILITY PATTER \n");
 
     const bookTopic: BookTopic = new BookTopic("PHP 5");
@@ -50,7 +51,7 @@ class Example {
     console.log("\nEND TEST CHAIN OF RESPONSIBILITY PATTER \n");
   }
 
-  static startImage(): void {
+  public startImage(): void {
     console.log("\nSTART TEST CHAIN OF RESPONSIBILITY PATTER \n");
 
     const inputImages: IImage[] = [new IR(), new IR(), new LS(), new IR(), new LS(), new LS()];
@@ -70,6 +71,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default ChainOfResponsibilityExample;

@@ -1,9 +1,10 @@
 import ProxyBookList from "./ProxyBookList";
 import Book from "./Book";
+import IExample from "../../../models/IExample";
 
-class Example {
+class ProxyExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST PROXY PATTER \n");
 
     const proxyBookList = new ProxyBookList();
@@ -30,6 +31,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default ProxyExample;

@@ -1,9 +1,10 @@
 import RealEntity from "./RealEntity";
 import NullEntity from "./NullEntity";
+import IExample from "../../../models/IExample";
 
-class Example {
+class NullObjectExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST NULL OBJECT PATTER \n");
 
     const realEntity: RealEntity = new RealEntity();
@@ -17,6 +18,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default NullObjectExample;

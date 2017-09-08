@@ -1,8 +1,9 @@
 import ShapeFactory from "./ShapeFactory";
+import IExample from "../../../models/IExample";
 
-class Example {
+class FactoryExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST FACTORY PATTER\n");
 
     const shapeFactory = new ShapeFactory();
@@ -30,6 +31,5 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default FactoryExample;
+

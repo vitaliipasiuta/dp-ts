@@ -3,10 +3,11 @@ import HawaiinPizzaBuilder from "./HawaiinPizzaBuilder";
 import SpicyPizzaBuilder from "./SpicyPizzaBuilder";
 import PizzaBuilder from "./PizzaBuilder";
 import Pizza from "./Pizza";
+import IExample from "../../../models/IExample";
 
-class Example {
+class BuilderExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST BUILDER PATTER \n");
 
     const waiter = new Waiter();
@@ -32,6 +33,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default BuilderExample;

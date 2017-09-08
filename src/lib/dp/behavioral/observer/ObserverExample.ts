@@ -2,10 +2,11 @@ import Subject from "./Subject";
 import HexObserver from "./HexObserver";
 import OctObserver from "./OctObserver";
 import BinObserver from "./BinObserver";
+import IExample from "../../../models/IExample";
 
-class Example {
+class ObserverExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST OBSERVER PATTER \n");
 
     const subject: Subject = new Subject();
@@ -26,6 +27,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default ObserverExample;

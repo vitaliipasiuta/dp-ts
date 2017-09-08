@@ -1,9 +1,10 @@
 import ShapeCache from "./ShapeCache";
 import Shape from "./Shape";
+import IExample from "../../../models/IExample";
 
-class Example {
+class PrototypeExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST PROTOTYPE PATTER \n");
 
     ShapeCache.loadCache();
@@ -22,6 +23,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default PrototypeExample;

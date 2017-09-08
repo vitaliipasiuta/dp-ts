@@ -1,9 +1,10 @@
 import BridgeBookAuthorTitle from "./BridgeBookAuthorTitle";
 import BridgeBookTitleAuthor from "./BridgeBookTitleAuthor";
+import IExample from "../../../models/IExample";
 
-class Example {
+class BridgeExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST BRIDGE PATTER \n");
 
     console.log("test 1 - author title with caps");
@@ -31,6 +32,5 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default BridgeExample;
+

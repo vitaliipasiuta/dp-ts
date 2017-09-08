@@ -1,9 +1,10 @@
 import Book from "./Book";
 import StrategyContext from "./StrategyContext";
+import IExample from "../../../models/IExample";
 
-class Example {
+class StrategyExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST STRATEGY PATTER \n");
 
     const book: Book = new Book("Fight club", "Chuck");
@@ -28,6 +29,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default StrategyExample;

@@ -1,10 +1,9 @@
 import BookBorrower from "./BookBorrower";
+import IExample from "../../../models/IExample";
 
-class Example {
+class SingletonExample implements IExample {
 
-  constructor() { }
-
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST SINGLETON PATTER \n");
 
     const bookBorrower1 = new BookBorrower();
@@ -35,6 +34,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default SingletonExample;

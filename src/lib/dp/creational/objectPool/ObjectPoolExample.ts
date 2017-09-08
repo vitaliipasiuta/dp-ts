@@ -1,9 +1,10 @@
 import ObjectPool from "./ObjectPool";
 import ReusableObject from "./ReusableObject";
+import IExample from "../../../models/IExample";
 
-class Example {
+class ObjectPoolExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST OBJECT POOL PATTER \n");
 
     const pool = new ObjectPool();
@@ -18,6 +19,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default ObjectPoolExample;

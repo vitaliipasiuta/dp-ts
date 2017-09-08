@@ -1,10 +1,11 @@
 import Game from "./Game";
 import Cricket from "./Cricket";
 import Football from "./Football";
+import IExample from "../../../models/IExample";
 
-class Example {
+class TemplateMethodExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST TEMPLATE PATTER \n");
 
     let game: Game = new Cricket();
@@ -17,6 +18,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default TemplateMethodExample;

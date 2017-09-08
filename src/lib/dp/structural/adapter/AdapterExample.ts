@@ -3,16 +3,18 @@ import RoundHole from "./square/RoundHole";
 import SocketClassAdapterImpl from "./volts/SocketClassAdapterImpl";
 import Volt from "./volts/Volt";
 import ISocketAdapter from "./volts/ISocketAdapter";
+import IExample from "../../../models/IExample";
 
-class Example {
+class AdapterExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST ADAPTER PATTER \n");
 
     const sockAdapter: ISocketAdapter = new SocketClassAdapterImpl();
-    const v3: Volt = Example.getVolt(sockAdapter,3);
-    const v12: Volt = Example.getVolt(sockAdapter,12);
-    const v120: Volt = Example.getVolt(sockAdapter,120);
+    const v3: Volt = this.getVolt(sockAdapter,3);
+    const v12: Volt = this.getVolt(sockAdapter,12);
+    const v120: Volt = this.getVolt(sockAdapter,120);
+
     console.log("v3 volts using Class Adapter=" + v3.getVolts());
     console.log("v12 volts using Class Adapter=" + v12.getVolts());
     console.log("v120 volts using Class Adapter=" + v120.getVolts());
@@ -20,7 +22,7 @@ class Example {
     console.log("\nEND TEST ADAPTER PATTER \n");
   }
 
-  private static getVolt (sockAdapter: ISocketAdapter, i: number): Volt {
+  private getVolt (sockAdapter: ISocketAdapter, i: number): Volt {
     switch (i) {
       case 3: return sockAdapter.get3Volt();
       case 12: return sockAdapter.get12Volt();
@@ -29,7 +31,7 @@ class Example {
     }
   }
 
-  static startSquare(): void {
+  public startSquare(): void {
     console.log("\nSTART TEST ADAPTER PATTER \n");
 
     const roundHole: RoundHole = new RoundHole(5);
@@ -45,6 +47,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default AdapterExample;

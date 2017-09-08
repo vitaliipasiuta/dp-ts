@@ -4,10 +4,13 @@ import Composite from "./columns/Composite";
 import Primitive from "./columns/Primitive";
 import Directory from "./files/Directory";
 import File from "./files/File";
+import IExample from "../../../models/IExample";
 
-class Example {
+class Example implements IExample {
 
-  static start(): void {
+  public start(): void {
+    console.log("\nSTART TEST COMPOSITE PATTER \n");
+
     const music: Directory = new Directory("MUSIC");
     const scorpions: Directory = new Directory("SCORPIONS");
     const dio: Directory = new Directory("DIO");
@@ -24,9 +27,11 @@ class Example {
     scorpions.add(dio);
     dio.add(track5);
     music.ls(0);
+
+    console.log("\nEND TEST COMPOSITE PATTER \n");
   }
 
-  static startColumn(): void {
+  public startColumn(): void {
     console.log("\nSTART TEST COMPOSITE PATTER \n");
 
     const first: Composite = new Row(1);
@@ -53,6 +58,5 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default Example;
+

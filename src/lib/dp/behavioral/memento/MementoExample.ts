@@ -1,9 +1,10 @@
 import Caretaker from "./Caretaker";
 import Originator from "./Originator";
+import IExample from "../../../models/IExample";
 
-class Example {
+class MementoExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST MEMENTO PATTER \n");
 
     const caretaker = new Caretaker();
@@ -21,6 +22,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default MementoExample;

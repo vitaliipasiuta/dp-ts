@@ -2,10 +2,11 @@ import Book from "./Book";
 import BookListIterator from "./BookListIterator";
 import BookListReverseIterator from "./BookListReverseIterator";
 import BookList from "./BookList";
+import IExample from "../../../models/IExample";
 
-class Example {
+class IteratorExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST ITERATOR PATTER \n");
 
     const firstBook: Book = new Book('Core PHP Programming, Third Edition', 'Atkinson and Suraski');
@@ -45,6 +46,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default IteratorExample;

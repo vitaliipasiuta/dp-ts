@@ -1,9 +1,10 @@
 import FlyweightFactory from "./FlyweightFactory";
 import FlyweightBookShelf from "./FlyweightBookShelf";
+import IExample from "../../../models/IExample";
 
-class Example {
+class FlyweightExample implements IExample {
 
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST FLYWEIGHT PATTER \n");
 
     const flyweightFactory = new FlyweightFactory();
@@ -43,6 +44,4 @@ class Example {
 
 }
 
-export {
-  Example
-};
+export default FlyweightExample;

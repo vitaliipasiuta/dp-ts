@@ -4,14 +4,11 @@ import PlainDescriptionVisitor from "./PlainDescriptionVisitor";
 import FancyDescriptionVisitor from "./FancyDescriptionVisitor";
 import Visitee from "./Visitee";
 import Visitor from "./Visitor";
+import IExample from "../../../models/IExample";
 
-class Example {
+class VisitorExample implements IExample {
 
-  static acceptVisitor(visitee: Visitee, visitor: Visitor): void {
-    visitee.accept(visitor);
-  }
-
-  static start(): void {
+  public start(): void {
     console.log("\nSTART TEST VISITOR PATTER \n");
 
     const book = new BookVisitee('Design Patterns', 'Gamma, Helm, Johnson, and Vlissides');
@@ -35,8 +32,10 @@ class Example {
     console.log("\nEND TEST DECOVISITORRATOR PATTER \n");
   }
 
+  private acceptVisitor(visitee: Visitee, visitor: Visitor): void {
+    visitee.accept(visitor);
+  }
+
 }
 
-export {
-  Example
-};
+export default VisitorExample;
