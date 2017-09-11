@@ -4,20 +4,19 @@
   "description": "-------------------",
   "author": "vitaliy.pasiuta",
   "scripts": {
-    "start": "./scripts/start"
+    "start": "./scripts/start",
+    "build": "./scripts/build"
   },
   "engines": {
     "node": ">=6.0.0"
   },
-  "main": "./dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StyleLounge/plp-campaign-analyzer.git"
-  },
-  "keywords": [],
+  "main": "./dist/main.js",
   "dependencies": {
     "colors": "^1.1.2",
     "lodash": "^4.17.4",
     "prompt": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.28"
   }
 }
