@@ -1,4 +1,4 @@
-class Directory {
+class Directory { // composite
 
   private name: string;
   private includedFiles: object[] = [];

@@ -24,7 +24,7 @@ class ChainOfResponsibilityExample implements IExample {
     console.log("title: " + bookTopic.getTitle());
     console.log("");
 
-    const bookSubTopic: BookSubTopic = new BookSubTopic("PHP 5 Patterns",bookTopic);
+    const bookSubTopic: BookSubTopic = new BookSubTopic("PHP 5 Patterns", bookTopic);
     console.log("bookSubTopic before title is set: ");
     console.log("topic: " + bookSubTopic.getTopic());
     console.log("title: " + bookSubTopic.getTitle());
@@ -40,7 +40,6 @@ class ChainOfResponsibilityExample implements IExample {
     console.log("bookSubSubTopic with no title set: ");
     console.log("topic: " + bookSubSubTopic.getTopic());
     console.log("title: " + bookSubSubTopic.getTitle());
-    console.log("");
 
     bookSubTopic.setTitle(null);
     console.log("bookSubSubTopic with no title for set for bookSubTopic either:");

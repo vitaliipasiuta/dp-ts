@@ -9,8 +9,10 @@ class FlyweightExample implements IExample {
 
     const flyweightFactory = new FlyweightFactory();
     const flyweightBookShelf1 =  new FlyweightBookShelf();
+
     let flyweightBook1 = flyweightFactory.getBook(1);
     flyweightBookShelf1.addBook(flyweightBook1);
+
     const flyweightBook2 = flyweightFactory.getBook(1);
     flyweightBookShelf1.addBook(flyweightBook2);
 

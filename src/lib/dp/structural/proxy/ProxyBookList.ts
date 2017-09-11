@@ -5,8 +5,6 @@ class ProxyBookList {
 
   private bookList: BookList = null;
 
-  constructor () {}
-
   public getBookCount(): number {
     if (this.bookList === null) {
       this.makeBookList();

@@ -26,6 +26,9 @@ class DecoratorExample implements IExample {
 
     console.log('showing title after star added : ');
     starDecorator.starTitle();
+    starDecorator.starTitle();
+    starDecorator.starTitle();
+    starDecorator.starTitle();
     console.log(decorator.showTitle());
     console.log('');
 
