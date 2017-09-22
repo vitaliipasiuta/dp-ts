@@ -42,8 +42,10 @@ class WeeklyReport extends Report {
     }
 }
 
-let wReport = new WeeklyReport(new PdfPrinter());
-wReport.print('Header text', 'Body text');
+export default function exampleRun(){
+    let wReport = new WeeklyReport(new PdfPrinter());
+    wReport.print('Header text', 'Body text');
 
-wReport = new WeeklyReport(new ExcelPrinter());
-wReport.print('Header text','Body text');
+    wReport = new WeeklyReport(new ExcelPrinter());
+    wReport.print('Header text','Body text');
+}
