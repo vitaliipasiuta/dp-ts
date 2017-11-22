@@ -4,6 +4,8 @@ import SocketClassAdapterImpl from "./volts/SocketClassAdapterImpl";
 import Volt from "./volts/Volt";
 import ISocketAdapter from "./volts/ISocketAdapter";
 import IExample from "../../../models/IExample";
+import Shipping from "./shipping/Shipping";
+import ShippingAdapter from "./shipping/ShippingAdapter";
 
 class AdapterExample implements IExample {
 
@@ -43,6 +45,24 @@ class AdapterExample implements IExample {
     }
 
     console.log("\nEND TEST ADAPTER PATTER \n");
+  }
+
+  public startShipping(){
+    let shipping = new Shipping();
+    let discount = 10;
+    let advancedShipping = new ShippingAdapter(discount);
+
+    let cost;
+
+    cost = shipping.request();
+
+    //old price
+    console.log('Old price / no discount: ',cost);
+
+    cost = advancedShipping.request();
+
+    //new price
+    console.log(`New price / with discount ${discount} : `,cost);
   }
 
 }

@@ -1,6 +1,7 @@
 import BridgeBookAuthorTitle from "./BridgeBookAuthorTitle";
 import BridgeBookTitleAuthor from "./BridgeBookTitleAuthor";
 import IExample from "../../../models/IExample";
+import PrinterReportExample from "./printer-report/PrinterReport";
 
 class BridgeExample implements IExample {
 
@@ -28,6 +29,10 @@ class BridgeExample implements IExample {
     console.log("");
 
     console.log("\nEND TEST BRIDGE PATTER \n");
+  }
+
+  public startPrinterReportExample(){
+    PrinterReportExample();
   }
 
 }
